@@ -27,6 +27,7 @@ const forms = (state) => {
         });
     };
 
+
     form.forEach(item => {
         item.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -51,7 +52,9 @@ const forms = (state) => {
                     clearInputs();
                     setTimeout(() => {
                         statusMessage.remove();
+                        
                     }, 5000);
+
                 });
         });
     });
